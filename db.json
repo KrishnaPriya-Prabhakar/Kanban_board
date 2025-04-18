@@ -1,0 +1,28 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Sample Task",
+      "description": "This is a sample",
+      "status": "In Progress"
+    },
+    {
+      "title": "dashboard",
+      "description": "UI implementation",
+      "status": "In Progress",
+      "id": 2
+    },
+    {
+      "title": "dashboard",
+      "description": "functionality",
+      "status": "Done",
+      "id": 3
+    },
+    {
+      "title": "Login",
+      "description": "Generate a UI and work on the functionality",
+      "status": "In Progress",
+      "id": 4
+    }
+  ]
+}

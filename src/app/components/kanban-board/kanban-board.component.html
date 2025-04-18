@@ -1,0 +1,28 @@
+<button mat-raised-button color="primary" (click)="openAddTaskDialog()">
+    Add New Task
+  </button>
+  
+  <div class="board">
+    <div
+      class="column"
+      *ngFor="let status of statuses"
+    >
+      <h3>{{ status }}</h3>
+  
+      <div
+        cdkDropList
+        id="{{ status }}"                                      
+        [cdkDropListData]="lists[status]"                      
+        [cdkDropListConnectedTo]="statuses"                    
+        class="task-column"
+        (cdkDropListDropped)="drop($event, status)"
+      >
+        <app-task-card
+          *ngFor="let task of lists[status]"
+          [task]="task"
+          cdkDrag
+        ></app-task-card>
+      </div>
+    </div>
+  </div>
+  
