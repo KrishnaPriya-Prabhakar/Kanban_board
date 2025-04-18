@@ -1,27 +1,51 @@
-# TaskDashboard
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+# 🗂️ Task Management Dashboard (Angular 14)
 
-## Development server
+A responsive Kanban-style task board built with Angular 14, Angular Material, and a mock REST API using json-server.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🔗 Repository Link
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **GitHub:** https://github.com/KrishnaPriya-Prabhakar/Kanban_board.git
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Features
 
-## Running unit tests
+- 🧩 Kanban Board with 3 columns: To Do, In Progress, Done
+- ➕ Add new tasks
+- 🖱️ Drag & Drop to update task status
+- 💾 Persistent state using mock API
+- 📱 Responsive and mobile-friendly UI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 📁 Local Setup
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Step 1: Clone the repo
+```bash
+git clone https://github.com/KrishnaPriya-Prabhakar/Kanban_board.git
+cd Kanban_board
 
-## Further help
+### Step 2: Install dependencies
+npm install
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Step 3: Start the mock api
+npm run start:api
+
+### Step 4: Run Angular App
+ng serve
+Visit http://localhost:4200 in your browser.
+
+
+🧱 Architecture
+kanban-board.component: Main board UI and drag/drop logic
+
+task-card.component: Displays a single task
+
+add-task-dialog.component: Modal form for new task
+
+task.service: Handles all API interactions
+
+db.json: Mock database
